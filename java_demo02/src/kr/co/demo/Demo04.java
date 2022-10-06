@@ -29,6 +29,7 @@ public class Demo04 {
 		int age = 30;
 		System.out.println("당신의 이름은 " + name + " 입니다. 나이는 " + age +"세 입니다.");
 		System.out.printf("당신의 이름은 %s 입니다. 나이는 %d세 입니다.", name, age);
+		System.out.println(10|6);
 	}
 
 }
