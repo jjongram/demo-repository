@@ -56,10 +56,36 @@ public class Demo01 {
 		// 변수 선언 후 즉시 초기화
 		int i2 = 30;
 		
-		//변수 선언만 하고 초기화 하지 않은 경우 -> 에러 발
-		//int i3;
-		//System.out.println(i3);
+		// 변수 선언만 하고 초기화 하지 않은 경우 -> 에러 발
+		// int i3;
+		// System.out.println(i3);
 		
+		// 다양한 자료형을 사용하여 변수에 데이터 저장
+		byte bt1 = 127; //2^7 -1
+		byte bt2 = -128; //-2^7-1
+		// 1byte = 8bit인데 맨 앞 bit는 부호라 ^7임
 		
+		short st1 = 32767;
+		short st2 = -32768;
+		
+		int it1 = 2147483647; //대략 20억
+		int it2 = -2147483648;
+		
+		long lg1 = 923372046854775807L; //L붙여주기
+		long lg2 = -923372046854775808L;
+		
+		float ft1 = 0.0f; //f 붙여주기
+		float ft2 = .3f; //0일땐 생략 가능
+		
+		double db1 = 0.3;
+		double db2 = .3;
+		
+		char cr1 = 65;
+		char cr2 = 'A'; // ' 사용
+		
+		boolean b1 = true;
+		boolean b2 = false;
+		
+		String st3 = "ABCD"; // " 사용
 	}
 }
