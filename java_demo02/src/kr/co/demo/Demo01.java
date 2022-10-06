@@ -43,6 +43,23 @@ public class Demo01 {
 		//			점유하던 메모리 공간이 사라진다.
 		System.out.println(s1);
 		System.out.println(c1);
+		
+		//변수 선언
+		int i1;
+		
+		//선언한 변수에 데이터 할당(저장, 초기화)
+		i1 = 10;
+		
+		// 이미 초기화 한 변수에 데이터 재할당
+		i1 = 20;
+		
+		// 변수 선언 후 즉시 초기화
+		int i2 = 30;
+		
+		//변수 선언만 하고 초기화 하지 않은 경우 -> 에러 발
+		//int i3;
+		//System.out.println(i3);
+		
+		
 	}
-
 }
