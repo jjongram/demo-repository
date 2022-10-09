@@ -33,6 +33,7 @@ public class Exam02 {
 			System.out.println("일요일 입니다.");
 		}
 
+		
 	}
 
 }
