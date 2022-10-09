@@ -14,7 +14,7 @@ public class Exam02 {
 		System.out.println("정수값을 입력해주세요.");
 		int num = sc.nextInt();
 		
-		if(num/5 == 1) {
+		if(num%5 == 0) {
 			System.out.println(num);
 		}
 
