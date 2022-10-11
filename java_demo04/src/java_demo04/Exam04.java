@@ -24,12 +24,13 @@ public class Exam04 {
 		double bmi = (double)weight/Math.pow(tall, 2);
 		
 		if(bmi>=25) {
-			System.out.println("비만입니다");
+			System.out.println("비만입니다.");
 		} else {
 			System.out.printf("당신의 BMI 지수 값은 %.2f 입니다.", bmi);
 		}
 		
 //		System.out.printf("당신의 BMI 지수 값은 %.2f 입니다.", bmi);
+//		String message = bmi < 25? "비만이 아닙니다" : "비만입니다.";
 
 	}
 

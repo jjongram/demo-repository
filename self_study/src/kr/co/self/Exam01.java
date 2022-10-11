@@ -20,7 +20,7 @@ public class Exam01 {
 		System.out.println("년도를 입력하세요.");
 		int year = sc.nextInt();
 		
-//		System.out.println(year);
+		System.out.println(year);
 		if((year % 4 != 0) || ((year % 4 == 0) && (year % 100 == 0)) || ((year % 4 != 0) && (year % 100 != 0) && (year % 400 != 0))) {
 //		if(((year % 4 != 0) && (year % 100 != 0))){
 
@@ -29,7 +29,10 @@ public class Exam01 {
 		} else {
 			System.out.println("윤년입니다.");
 		}
-
+/*
+ * 		if(year % 4 == 0) {
+ * 			if
+ */
 	}
 
 }

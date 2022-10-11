@@ -11,8 +11,9 @@ public class Exam02 {
 		 */
 		Scanner sc = new Scanner(System.in);
 		
+		int num;
 		System.out.println("정수값을 입력해주세요.");
-		int num = sc.nextInt();
+		num = sc.nextInt();
 		
 		if(num%5 == 0) {
 			System.out.println(num);

@@ -17,7 +17,7 @@ public class Exam02 {
 		int date = sc.nextInt();
 		
 //		System.out.println(date);
-		if(date % 7 == 3) {
+		/*if(date % 7 == 3) {
 			System.out.println("월요일 입니다.");
 		} else if (date % 7 == 4) {
 			System.out.println("화요일 입니다.");
@@ -31,8 +31,25 @@ public class Exam02 {
 			System.out.println("토요일 입니다.");
 		} else if (date % 7 == 2) {
 			System.out.println("일요일 입니다.");
+		}*/
+		String message = " ";
+		switch(date % 7) {
+		 case 0 :
+			 message = "금"; break;
+		 case 1 :
+			 message = "토"; break;
+		 case 2 :
+			 message = "일"; break;
+		 case 3 :
+			 message = "월"; break;
+		 case 4 :
+			 message = "화"; break;
+		 case 5 :
+			 message = "수"; break;
+		 case 6 :
+			 message = "목"; break;
 		}
-
+		System.out.printf("%s요일 입니다.", message);
 		
 	}
 
