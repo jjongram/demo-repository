@@ -16,10 +16,10 @@ public class Exam11 {
 		int n = sc.nextInt();
 		int m = sc.nextInt();
 		
-		for(; n <= m; n++) {
+		for(; n < m; n++) {
 			System.out.println(n);		
 		}
-		for(; m <= n; m++) {
+		for(; m < n; m++) {
 			System.out.println(m);
 
 		}
