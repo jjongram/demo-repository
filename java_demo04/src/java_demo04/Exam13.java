@@ -11,7 +11,6 @@ public class Exam13 {
 		 * 7	8	9	10
 		 * 11	12	13	14	15
 		 */
-//		for(int k = 1; k <= 15; k++)
 		int k = 1;
 		for(int i = 1; i <= 5; i++) {
 			for(int j = 1; j <= i; j++) {
