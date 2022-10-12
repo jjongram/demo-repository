@@ -18,6 +18,7 @@ public class Exam14 {
 		System.out.println("마지막 일자 입력.");
 		int c = sc.nextInt();
 		
+		
 		System.out.println("일\t월\t화\t수\t목\t금\t토");
 		int i;
 		
