@@ -19,7 +19,7 @@ public class Exam10 {
 				
 			int tmp[] = new int[arr.length + 1];
 					
-			tmp = Arrays.copyOf(tmp, arr.length);
+			tmp = Arrays.copyOf(arr, arr.length);
 			
 			tmp[tmp.length - 1] = a;//새로운 공간에 입력받은 값 추가
 					
