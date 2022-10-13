@@ -23,7 +23,6 @@ public class Exam05 {
 //			if(arr[i] == b) {
 //				System.out.println("중복이 있습니다.");
 			}
-		}
 
 		for(int i = 0; i < arr.length; i++) {
 			System.out.printf("%d\t", arr[i]);
