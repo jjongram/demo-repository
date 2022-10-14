@@ -1,9 +1,8 @@
 package kr.co.demo;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Exam11 {
+public class Exam010 {
 
 	public static void main(String[] args) {
 		/*
@@ -24,34 +23,17 @@ public class Exam11 {
 				break;
 			}
 		}
-		int[][] arr = new int[3][];
-		
-		//1. 일반적인 1차 배열 생성.
-		//2. 1차 배열을 동적 배열로 활용하여 랜덤값 추가.
-		//3. 1차 배열의 참조 주소를 2차 배열의 행에 등록 -> arr[0] = 참조주소;
-		
+		int[][] arr = new int[3][n];
 		
 		for(int i = 0; i < arr.length; i++) {
-			int[] arri = new int [0];
-			for(int j = 0; j < n; j++) {
-				int num = (int)((Math.random()*99)+1);//100미만에 해당하는 난수 생성
-				
-				int tmp[] = new int[arri.length + 1];
-				
-				for(int k = 0; k < arri.length; k++) {
-					tmp[k] = arri[k];
-				}
-				
-				tmp[tmp.length - 1] = num;//새로운 공간에 입력받은 값 추가
-				
-				arri = tmp;//주소 복사
-				
+			for(int j= 0; j < arr[i].length; j++) {
+				arr[i][j] = (int)((Math.random()*99)+1);
 			}
-			arr[i] = arri;//주소 복사
 		}
 		for(int i = 0; i < arr.length; i++) {
-				System.out.println(Arrays.toString(arr[i]));
+			for(int j= 0; j < arr[i].length; j++) {
+				System.out.printf("arr[%d][%d] -> %d\n", i, j, arr[i][j]);
+			}
 		}
 	}
-
 }
