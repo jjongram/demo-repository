@@ -8,7 +8,7 @@ public class Battery {
 
 	//생성자
 	public Battery() {
-		
+		 
 	}
 	public void charge() {
 		
