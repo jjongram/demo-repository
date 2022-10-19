@@ -12,27 +12,52 @@ package kr.co.Exam02;
  */
 
 public class Subject {
-	private String name;
-	private int score;
-	private String grade;
+	public String name;
+	public int score;
+	public char grade;
 	
-	public Subject(String name, int score, String grade) {
+	public Subject(String name) {
 		this.name = name;
-		this.score = score;
-		this.grade = grade;
-	}
-	public void changeScore(int score, String grade) {//점수등록
-		this.score = score;
-		this.grade = grade;
 	}
 	
-	public String getName() {//과목확인
-		return this.name;
+	public void setScore(int score) {
+		if(0 <= score && score <= 100) {
+			this.score = score;
+		} else {
+			System.out.println("0~100 사이의 값을 입력하시오");
+		} setGrade();
 	}
-	public int getScore() {//점수확인
-		return this.score;
+	public void setGrade() {
+		switch (score/10) {
+			case 10 :
+			case 9 :
+				this.grade = 'A';
+				break;
+			case 8 :
+				this.grade = 'B';
+				break;
+			case 7 :
+				this.grade = 'C';
+				break;
+			case 6 :
+				this.grade = 'D';
+				break;
+			case 5 :
+				this.grade = 'F';
+				break;
+			default :
+				this.grade = 'ㅗ';
+		}
 	}
-	public String getGrade() {//등급확인
-		return this.grade;
+	public String getName() {
+		return name;
+	}
+
+	public int getScore() {
+		return score;
+	}
+
+	public char getGrade() {
+		return grade;
 	}
 }

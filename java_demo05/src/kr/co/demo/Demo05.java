@@ -48,7 +48,10 @@ public class Demo05 {
 		for(int i = 0; i < arr5.length; i++) {
 			System.out.printf("arr1[%d] = %d\tarr5[%d] = %d\n", i, arr1[i], i, arr5[i]);
 		}
-
+		int tmp[];
+		int arr[] = new int[0];
+		tmp = Arrays.copyOf(arr, arr.length+1);
+		
 		
 	}
 

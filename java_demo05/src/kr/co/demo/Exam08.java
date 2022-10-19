@@ -1,5 +1,6 @@
 package kr.co.demo;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Exam08 {
@@ -20,11 +21,14 @@ public class Exam08 {
 				continue;
 			}
 			
-			int tmp[] = new int[arr.length + 1];
+			int tmp[] = new int[arr.length];
 			
-			for(int j = 0; j < arr.length; j++) {
-				tmp[j] = arr[j];
-			}
+			tmp = Arrays.copyOf(arr, arr.length+1);//(array4의, 길이)
+
+//			for(int j = 0; j < arr.length; j++) {
+//				tmp[j] = arr[j];
+//			}
+			
 			
 			arr = tmp;//주소 복사
 			

@@ -30,37 +30,31 @@ public class Pen {
 		this.color = color;
 		this.inkType = inkType;
 	}
-	
-	public void simOut() {
-		System.out.println("펜 심이 나왔습니다. 글을 쓸 수 있습니다.");
-		this.simOut = true;
-	}
-	
 	public void simIn() {
-		System.out.println("펜 심이 들어갔습니다. 글을 쓸 수 없습니다.");
-		this.simOut = false;
+		simOut = true;
+		System.out.println("심이 나와있습니다.");
 	}
-
-	public void write(String message) {
-		if(simOut) {
-			System.out.printf("%s 색상으로 다음의 글을 작성합니다.\n", this.color);
-			System.out.println("\t" + message);
-		} else {
-			System.out.println("글을 작성하려면 펜 심이 나오게 하세요.");
+	public void simOut() {
+		simOut = false;
+		System.out.println("심이 들어가있습니다.");
+	}
+	public void write() {
+		if(simOut = true) {
+			System.out.println();
 		}
 	}
-	// * 현재 사용하고 있는 펜의 색상, 볼 크기, 잉크 타입을 확인 할 수 있어야 한다.
-
+	
 	public String getColor() {
-		return this.color;
+		return color;
 	}
-	
 	public int getBallSize() {
-		return this.ballSize;
+		return ballSize;
 	}
-	
-	 public String getInkType() {
-		 return this.inkType;
+	public String getInkType() {
+		return inkType;
+	}
+	public boolean isSimOut() {
+		return simOut;
 	}
 
 }

@@ -17,23 +17,17 @@ public class Exam {
 		 * 
 		 * 현재 사용하고 있는 펜의 색상, 볼 크기, 잉크 타입을 확인 할 수 있어야 한다.
 		 */
-		Pen pen = new Pen("red", 1, "ink");
+		Pen pen = new Pen("blue", 2, "ink");
 		
 		System.out.println("색상 : " + pen.getColor());
 		System.out.println("볼 크기 : " + pen.getBallSize());
 		System.out.println("잉크 타입 : " + pen.getInkType());
 		
-		pen.simOut();
-		pen.write("안녕하세요.");
-
-		System.out.println();
-		
-		pen.simChange("blue", "gel");
+		pen.simChange("red", "glue");
 		System.out.println("색상 : " + pen.getColor());
 		System.out.println("볼 크기 : " + pen.getBallSize());
 		System.out.println("잉크 타입 : " + pen.getInkType());
 
-		pen.write("안녕하세요.");
 	}
 
 }

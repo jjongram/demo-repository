@@ -14,16 +14,12 @@ public class Exam {
 		 * 등급은 점수에 의해 결정되며, A~F 등급까지 부여한다.
 		 * 과목 객체의 속성값을 확인하는 것은 허용한다.
 		 */
-		Subject subject = new Subject("코딩", 90, "A");
-		System.out.println("과목명 : " + subject.getName());
-		System.out.println("점수 : " + subject.getScore());
-		System.out.println("등급 : " + subject.getGrade());
+		Subject subject = new Subject("science");
+		subject.setScore(1223);
 		
-		subject.changeScore(60, "C");
 		System.out.println("과목명 : " + subject.getName());
 		System.out.println("점수 : " + subject.getScore());
 		System.out.println("등급 : " + subject.getGrade());
-
 	}
 
 }
