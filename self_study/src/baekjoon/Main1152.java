@@ -12,7 +12,7 @@ public class Main1152 {
 	}
 	
 	public static void test() {
-		String s = "        sfdgdfg     dtghdyghyd     dfghtdtgh";
+		String s = " ";
 		String sArr[] = s.split(" ");
 		for(int i = 0; i < sArr.length; i++) {
 			if(!sArr[i].isBlank()) {

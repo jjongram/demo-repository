@@ -1,33 +1,37 @@
 package baekjoon;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main2920 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int[] arr = new int[8];
-		for(int i = 0; i < arr.length; i++) {
-			arr[i] = sc.nextInt();
-		}
-		for(int i = 0; i < arr.length; i++) {
-			if(arr[i]<arr[i+1]) {
-				System.out.println("ascending");
-				break;
-			} else if(arr[i]>arr[i+1]) {
-				System.out.println("descending");
-				break;
-			} else {
-				System.out.println("mixed");
-				break;
-			}
-		}
-		for(int i = 0; i < arr.length; i++) {
-			if arr[i]<arr[i+1] ;
-			
-			}
+		ArrayList<Integer> list1 = new ArrayList<>();
+		ArrayList<Integer> list2 = new ArrayList<>();
+		ArrayList<Integer> list3 = new ArrayList<>();
 
+
+		for(int i = 0; i < 8; i++) {
+			int a = sc.nextInt();
+			list1.add(a);//ascending
+			list2.add(a);//descending
+			list3.add(a);//original
+
+		}
+		Collections.sort(list1);//ascending
 		
+		Collections.sort(list2);
+		Collections.reverse(list2);//descending
+		
+		if(list1.equals(list3)) {
+			System.out.println("ascending");
+		} else if(list2.equals(list3)) {
+			System.out.println("descending");
+		} else {
+			System.out.println("mixed");
+		}
 	}
 
 }
