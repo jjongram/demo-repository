@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test">
+  <select id="hello" resultType="string">
+    SELECT 'Hello Mybatis' FROM DUAL
+  </select>
+  <select id="reqAccount" resultType="kr.co.vo.AccountVO">
+    SELECT ID, NICKNAME, EMAIL, ISALLOW, REQDATE
+      FROM REQ_ACCOUNTS
+     WHERE ISALLOW = 'N'
+  </select>
+  <insert id="insertReqAccount" parameterType="kr.co.vo.AccountVO">
+    INSERT INTO REQ_ACCOUNTS(ID, NICKNAME, EMAIL)
+         VALUES(SEQ_REQ_ACCOUNTS.NEXTVAL, #{nickname}, #{email})
+  </insert>
+  <select id="dupReqAccountNickname" parameterType="kr.co.vo.AccountVO" resultType="_int">
+    SELECT COUNT(*) FROM REQ_ACCOUNTS WHERE NICKNAME = #{nickname}
+  </select>
+  <select id="dupReqAccountEmail" parameterType="kr.co.vo.AccountVO" resultType="_int">
+    SELECT COUNT(*) FROM REQ_ACCOUNTS WHERE EMAIL = #{email}
+  </select>
+  <!--
+  <insert></insert>
+  <update></update>
+  <delete></delete>
+   -->
+</mapper>
