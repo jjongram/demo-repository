@@ -12,5 +12,6 @@ public class 시저암호 {
         System.out.println(answer);
         System.out.println((int)'z');
         System.out.println((int)'a');
+        System.out.println("Hi");
     }
 }
