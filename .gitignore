@@ -26,3 +26,7 @@ hs_err_pid*
 .classpath
 .project
 .settings/
+
+.idea/
+node_modules/
+package-lock.json

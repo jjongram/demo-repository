@@ -3,7 +3,6 @@ package baekjoon;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class Main1000 {
 
@@ -17,10 +16,8 @@ public class Main1000 {
 //		System.out.println(a+c);
 		
 		String str = b.readLine();
-		StringTokenizer st = new StringTokenizer();
-		
-		System.out.println(st.nextToken());
-		
+
+
 	}
 
 }

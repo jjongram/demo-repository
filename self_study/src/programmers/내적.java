@@ -9,6 +9,7 @@ public class 내적 {
 		for(int i = 0; i < a.length; i++) {
 			answer += (a[i] * b[i]);
 		}
+		System.out.println(answer);
 	}
 
 }

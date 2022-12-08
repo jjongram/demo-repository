@@ -1,6 +1,5 @@
 package programmers;
 
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -35,7 +34,7 @@ public class pokemon {
 	public static void main(String[] args) {
 		int[] arr = {3, 3, 3, 2, 2, 2};
 		Set<Integer> set = new HashSet<Integer>();
-		Collections.addAll(set, arr);
+		// Collections.addAll(set, arr);
 	}
 
 }
