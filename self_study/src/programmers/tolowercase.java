@@ -24,7 +24,7 @@ public class tolowercase {
 		} else if(cntp != cnty) {
 			answer = false;
 		}
-		return answer;
+		System.out.println(answer);
 	}
 
 }

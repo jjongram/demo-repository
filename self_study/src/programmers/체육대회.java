@@ -9,9 +9,9 @@ public class 체육대회 {
 		ability[2][0] = 30; ability[2][1] = 30; ability[2][2] = 30;
 		ability[3][0] = 70; ability[3][1] = 0; ability[3][2] = 70;
 		ability[4][0] = 100; ability[4][1] = 100; ability[4][2] = 100;
-		for(int i = 0; i < )
 		int answer = 0;
-		
+		System.out.println("answer");
+
 	}
 
 }

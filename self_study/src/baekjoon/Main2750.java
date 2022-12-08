@@ -1,6 +1,5 @@
 package baekjoon;
 
-import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
