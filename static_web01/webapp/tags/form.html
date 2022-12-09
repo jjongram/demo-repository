@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>입력 폼 관련 태그</title>
+</head>
+<body>
+    <!--  
+        사용자 입력 폼을 만들고 사용자가 입력한 데이터를
+        서버에 전송하기 위한 태그
+    -->
+
+    <!--  
+        input 태그를 사용한 입력 폼
+    -->
+    <input type="text"><br>
+    <input type="password"><br>
+    <input type="number"><br>
+    <input type="checkbox"><br>
+    <input type="radio"><br>
+    <input type="file"><br>
+    <input type="date"><br>
+    <input type="time"><br>
+    <input type="datetiem-local"><br>
+    <input type="button"><br>
+    <input type="reset"><br>
+    <input type="submit"><br>
+
+    <!-- 
+        textarea, select, option 태그를 사용한 입력 폼
+    -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <select name="" id="">
+        <option value="">option1</option>
+        <option value="">option2</option>
+        <option value="">option3</option>
+    </select>
+
+    <!--  
+        form 태그를 사용하여 입력 폼을 묶고 서버에 전송
+    -->
+    <form action="./server.jsp method="get">
+        <input type="text" name=""><br>
+        <input type="text" name=""><br>
+        <input type="submit">
+    </form>
+
+    <form action="./server.jsp method="post">
+        <input type="text" name=""><br>
+        <input type="text" name=""><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
