@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 및 미디어 관련 태그</title>
+</head>
+<body>
+    <!--
+        이미지를 삽입하기 위해 사용하는 태그
+    -->
+    <img src="이미지 경로" alt="이미지에 문제가 있는 경우 대체할 메시지">
+    <br>
+    <img src="/static/img/googlelogo_color_272x92dp.png" alt="구글 로고 이미지">
+    <br>
+    <img src="https://www.naver.com/favicon.ico?1" alt="네이버 아이콘">
+    <br>
+    <img src="https://www.naver.com/favicon.ico?1" alt="네이버 아이콘" width="80px">
+    <br>
+    <img src="https://www.naver.com/favicon.ico?1" alt="네이버 아이콘" height="80px">
+    <br>
+
+    <!--
+        영상, 음향을 재생하기 위해 사용하는 태그
+    -->
+    <audio controls loop muted preload="metadata"
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+    <br>
+    <video controls loop muted preload="metadata" poster="/static/img/googlelogo_color_272x92dp.png"
+        width="320px"
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"></video>
+    <br>
+
+    <audio controls>
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.flac">
+        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3">
+    </audio>
+</body>
+</html>
