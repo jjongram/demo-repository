@@ -1,0 +1,28 @@
+.fs1 {
+    font-size: 1.5em; /* 기본 크기 : 12pt, 16px */
+}
+.fw1 {
+    font-weight: bold;
+}
+.fs2 {
+    font-style: italic;
+}
+.ff1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+.c1 {
+    color: red;
+}
+.td1 {
+    text-decoration: none;
+}
+.ts1 {
+    /*           가로 세로 번짐 색상 */
+    text-shadow: 10px 10px 2px gray;
+}
+.ta1-left { text-align: left; }
+.ta1-right { text-align: right; }
+.ta1-center { text-align: center; }
+.ta1-justify { text-align: justify; }
+
+.lh1 { line-height: 60px; font-size: 30px; }

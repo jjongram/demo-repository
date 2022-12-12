@@ -1,0 +1,117 @@
+/* 전체 선택자 */
+* {
+    color: gray;
+}
+
+/* 태그 선택자 */
+h1 {
+    background-color: aqua;
+    color: darkblue;
+}
+h2,h3,h4 {
+    background-color: coral;
+    color: white;
+}
+
+/* 아이디 선택자 */
+#title1 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+/* 클래스 선택자 */
+.bg-gray {
+    background-color: gray;
+    color: white;
+}
+
+.fg-black {
+    color: black;
+}
+
+/* 속성 선택자 */
+input[type] {
+    background-color: ghostwhite;
+}
+input[type=text] {
+    color: darkcyan;
+}
+input[type=password] {
+    color: crimson;
+}
+input[type=number] {
+    color: orangered;
+}
+
+/* 자손, 후손 선택자 */
+table   tr {
+    background-color: lightsalmon;
+}
+thead > tr {
+    background-color: lavenderblush;
+}
+
+/* 형제 선택자 */
+.s-child + td {
+    color: black;
+    font-weight: bold;
+}
+.s-child ~ td {
+    color: darkred;
+}
+
+/* 의사클래스 선택자 */
+.t2 td:hover {
+    background-color: black;
+    color: white;
+}
+.t1 td:active {
+    color: red;
+}
+.t1 ::selection {
+    background-color: azure;
+}
+
+a:link {
+    color: tomato;
+}
+a:visited {
+    color: black;
+}
+
+ol > li:first-child {
+    color: darkcyan;
+    font-weight: bold;
+}
+ol > li:last-child {
+    color: darkorange;
+    font-weight: bold;
+}
+ol > li:nth-child(2n) {
+    background-color: lavender;
+}
+.parent1 > :first-child {
+    background-color: white;
+    color: black;
+}
+.parent1 > :last-child {
+    background-color: white;
+    color: red;
+}
+.parent1 > :nth-child(2n) {
+    background-color: white;
+    text-decoration: underline;
+    color: black;
+}
+
+.parent2 > :first-of-type {
+    background-color: white;
+    color: red;
+}
+.parent2 > :last-of-type {
+    background-color: deepskyblue;
+}
+.parent2 > :nth-of-type(2n) {
+    text-decoration: underline;
+}
