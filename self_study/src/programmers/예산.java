@@ -1,3 +1,5 @@
+package programmers;
+
 public class 예산 {
 
     public static void main(String[] args) {

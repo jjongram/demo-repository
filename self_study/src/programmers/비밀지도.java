@@ -6,12 +6,12 @@ import java.util.Stack;
 public class 비밀지도 {
     public static void main(String[] args) {
         int n = 5;
-        int[] arr1 = {9,20,28,18,11};
+        int[] arr1 = {10,20,28,18,11};
         int[] arr2 = {30,1,21,17,28};
         String[] answer = {};
         int[][] map1 = new int[n][n];
         int[][] map2 = new int[n][n];
-        String str = Integer.toString(12, 2);
+//        String str = Integer.toString(12, 2);
 //        System.out.println(str);
 //        System.out.println(str.charAt(1));
 //
@@ -32,10 +32,15 @@ public class 비밀지도 {
 //        System.out.println((Integer.toString(arr1[0], 2)));
         for(int i = 0; i < map1.length; i++) {
             Stack s = new Stack();
-            s.push(Integer.toString((arr1[i]), 2));
-            for(int j = map1[i].length-1; j >= 0; j--) {
-                map1[i][j] += (int)s.pop();
+            String binary = Integer.toString((arr1[i]), 2);
+            for(int k = 0; k < Integer.toString((arr1[i]), 2).length(); k++) {
+            	map1[i][k] += (int)s.push(binary.charAt(k));
             }
+//            System.out.println(s.pop());
+//            for(int j = map1[i].length-1; j >= 0; j--) {
+//                map1[i][j] += Integer.par String.valueOf(s.pop()).charAt(i);
+//                System.out.println(map1[i][j]);
+//            }
         }
         System.out.println(Arrays.deepToString(map1));
     }
