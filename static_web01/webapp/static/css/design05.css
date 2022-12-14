@@ -1,0 +1,126 @@
+.kakao-login-form {
+    border-style: solid;
+    border-color:#F0F0F0;
+    border-width: 1px;
+    padding: 2em;
+    width: 420px;
+}
+
+.kakao-login-form .kakao-login-main .kakao-login-input input {
+    width: 100%;
+    border-style: none none solid none;
+    border-color: #F0F0F0;
+    outline-style: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.kakao-login-form .kakao-login-main .kakao-login-input .input-email,
+.kakao-login-form .kakao-login-main .kakao-login-input .input-password {
+    margin-bottom: 1em;
+}
+.kakao-login-form .kakao-login-main .kakao-login-input input:focus {
+    border-color: black;
+}
+.kakao-login-form .kakao-login-main .kakao-login-input input + label {
+    visibility: hidden;
+    display: inline-block;
+    font-size: 0.4em;
+}
+.kakao-login-form .kakao-login-main .kakao-login-input input + label span{
+    color: red;
+    font-weight: bold;
+}
+.kakao-login-form .kakao-login-main .kakao-login-input input:focus + label {
+    visibility: visible;
+}
+.kakao-login-form .kakao-login-main .kakao-login-check {
+    font-size: 14px;
+    color: #000000b3;
+}
+#login_state {
+    display: inline-block;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #999;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    position: relative;
+    top: 6px;
+} 
+#login_state:checked {
+    background-color:#FEE500;
+    border: none;
+}
+.kakao-login-form .kakao-login-button .block-button .btn-login {
+    margin-top: 1.5em;
+    width: 100%;
+    font-size: 15px;
+    padding: 0.5em;
+    border-style: none;
+    border-radius: 4px;
+    background-color: #FEE500;
+}
+.kakao-login-form .kakao-login-button .horizon-line{
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    max-width: 600px;
+    position: relative;
+    padding: 15px 0;
+}
+.kakao-login-form .kakao-login-button .horizon-line::before {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 2px;
+    background: #F0F0F0;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+.kakao-login-form .kakao-login-button .horizon-line::after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 2px;
+    background: #F0F0F0;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+.kakao-login-form .kakao-login-button .block-button .btn-qr-login {
+    width: 100%;
+    font-size: 15px;
+    padding: 0.5em;
+    margin-bottom: 2em;
+    border-style: none;
+    border-radius: 4px;
+    background-color: #F0F0F0;
+}
+.kakao-login-form .kakao-login-footer .floating {
+    color: #F0F0F0;
+}
+.kakao-login-form .kakao-login-footer .floating .sign-in{
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+.kakao-login-form .kakao-login-footer .floating .find-account{
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+}
+.kakao-login-form .kakao-login-footer .floating .find-password{
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+}
+.kakao-login-form .kakao-login-footer .floating .left {
+    float: left;
+}
+.kakao-login-form .kakao-login-footer .floating .right {
+    float: right;
+}
