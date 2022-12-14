@@ -1,0 +1,110 @@
+.login-form {
+    width: 420px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-radius: 6px 6px 0 0;
+    border-color: rgb(137, 137, 137);
+}
+.login-form .login-tab-menu {
+    padding: 1em 0 1em 0;
+    position: relative;
+    top: -17px;
+}
+.login-form .login-tab-menu .tab-link {
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: black;
+    width: 33.33%;
+    border-style: solid;
+    border-color: rgb(137, 137, 137);
+    border-width: 1px;
+    padding: 1em;
+}
+.login-form .login-tab-menu .tab-link:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.login-form .login-tab-menu .tab-link:last-child {
+    border-top-right-radius: 6px;
+}
+.login-form .login-tab-menu .active {
+    border-bottom-style: none;
+}
+.login-form .login-tab-menu :not(.active) {
+    background-color: rgb(240,240, 240);
+}
+.login-form .login-main {
+    border-style: none solid solid solid;
+    border-color: rgb(137, 137, 137);
+    border-width: 1px;
+    border-radius: 0 0 6px 6px;
+    margin-top: 22px;
+    padding-top: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 1em;
+}
+.login-form .login-main .login-input-form .input-group {
+    margin-bottom: 0.6em;
+}
+.login-form .login-main .login-input-form .input-group input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1em;
+    outline-style: none;
+    border-style: solid;
+    border-width: 1px;
+}
+.login-form .login-main .login-input-form .input-group input:first-child {
+    border-radius: 6px 6px 0 0;
+}
+.login-form .login-main .login-input-form .input-group input:last-child {
+    border-radius: 0 0 6px 6px;
+}
+.login-form .login-main .login-input-form .input-group input:focus {
+    border-color: rgb(3, 198, 90);
+}
+.login-form .login-main .login-input-form .check-group {
+    margin-bottom: 3em;
+}
+.login-form .login-main .login-input-form .check-group .left {
+    float: left;
+}
+.login-form .login-main .login-input-form .check-group .right {
+    float: right;
+} 
+.login-form .login-main .login-input-form .check-group label {
+    font-size: 0.8em;
+    color: rgb(99, 99, 99);
+}
+.login-form .login-main .login-button-form {
+    clear: both;
+}
+.login-form .login-main .login-button-form .btn-block {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-style: none;
+    border-radius: 6px;
+}
+.login-form .login-main .login-button-form .btn-green {
+    background-color: rgb(3, 198, 90);
+    color: white;
+} 
+.login-form .login-foot {
+    padding: 1em;
+    font-size: 0.8em;
+    color: rgb(137, 137, 137);
+    text-align: center;
+}
+.login-form .login-foot a {
+    text-decoration: none;
+    color: rgb(137, 137, 137);
+    padding-left: 8px;
+    padding-right: 8px;
+}
