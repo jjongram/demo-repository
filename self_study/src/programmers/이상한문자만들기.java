@@ -7,7 +7,7 @@ import java.util.LinkedList;
 public class 이상한문자만들기 {
 
 	public static void main(String[] args) {
-		String s = "sldkfjsl   askldfjs dkfjk df";
+		String s = "try    hello      world";
 		s = s.toLowerCase();
 		String answer = "";
 		String[] str1 = s.split(" ");
@@ -23,6 +23,7 @@ public class 이상한문자만들기 {
 		for(int i = 0; i < c.size(); i++) {
 			if(((LinkedList<String>) c).get(i).isBlank()) {
 				c.remove(i);
+				System.out.println("worked");
 			}
 		}
 		System.out.println(c);

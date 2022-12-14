@@ -12,7 +12,6 @@ public class 개미군단 {
 		int hp2 = hp1 % 3;
 		answer += (hp1 / 3);
 		
-//		int hp3 = hp2 % 1;
 		answer += (hp2 / 1);
 
 		System.out.print(answer);
