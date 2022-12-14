@@ -27,9 +27,13 @@
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
-
+.login-form .login-tab-menu .tab-link:not(:first-child):not(:last-child){
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
 .login-form .login-tab-menu .tab-link:last-child {
     border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
 }
 .login-form .login-tab-menu .active {
     border-bottom-style: none;
