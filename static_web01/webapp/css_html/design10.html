@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판</title>
+    <link rel="stylesheet" href="/static/css/design09.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-md">
+        <header>
+            <nav class="navbar navbar-expand-md bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">로고</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="topNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">메뉴1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">메뉴2</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    드랍다운
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">드랍메뉴1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">드랍메뉴2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">메뉴4</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link">
+                                    <button class="btn btn-sm btn-outline-secondary">로그인</button>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="icon align-middle">apps</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="mt-3">
+                <div id="sliderImg" class="carousel slider carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button class="active" data-bs-target="sliderImg" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#sliderImg" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#sliderImg" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="w-100" src="/static/img/no-image.jpeg" alt="">
+                            <div class="carousel-caption">
+                                <h5>첫번째 이미지</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100" src="/static/img/no-image2.jpeg" alt="">
+                            <div class="carousel-caption">
+                                <h5>두번째 이미지</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100" src="/static/img/no-image3.jpeg" alt="">
+                            <div class="carousel-caption">
+                                <h5>세번째 이미지</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#sliderImg" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#sliderImg" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="row">
+                    <div class="col-auto ms-auto">
+                        <div class="input-group">
+                            <input class="form-control" type="text">
+                            <button class="btn btn-success" type="button">검색</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="mt-3">
+            <div class="row">
+                <div class="col-3">
+                    <nav class="list-group list-group-flush border-bottom border-top border-2 border-danger">
+                        <a class="list-group-item list-group-item-action" href="#">
+                            사이드 메뉴1
+                            <span class="badge bg-danger rounded-pill">N</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            사이드 메뉴2
+                            <span class="badge bg-danger rounded-pill">N</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">사이드 메뉴3</a>
+                        <a class="list-group-item list-group-item-action" href="#">사이드 메뉴4</a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            사이드 메뉴5
+                            <span class="badge bg-danger rounded-pill">N</span>
+                        </a>
+                    </nav>
+                    <nav class="list-group list-group-flush border-bottom border-2 border-danger">
+                        <a class="list-group-item list-group-item-action" href="#">
+                            사이드 메뉴6
+                            <span class="badge bg-danger rounded-pill">N</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">
+                            사이드 메뉴7
+                            <span class="badge bg-danger rounded-pill">N</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action" href="#">사이드 메뉴8</a>
+                    </nav>
+                </div>
+                <div class="col-9">
+                    <div class="row align-items-center border-bottom border-2 border-dark g-1 pb-2">
+                        <div class="col-auto">
+                            <span class="fs-4 fw-bold text-black ">게시판 명</span>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <a class="text-decoration-none text-secondary" href="#"><small>더보기 &gt;</small></a>
+                        </div>
+                    </div>
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">말머리</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">작성자</th>
+                                <th scope="col">작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td><a class="text-decoration-none text-dark" href="">asdf</a></td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </div>
+        </section>
+        <footer>
+            <div class="row my-4 pt-4 border-top border-2 border-dark">
+                <div class="col-auto">
+                    회사명 | <a class="text-decoration-none text-secondary" href="#">사이트 주소</a>
+                </div>
+                <div class="col-auto ms-auto">
+                    회사로고
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
