@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class 비밀지도again {
 
 	public static void main(String[] args) {
+		long beforeTime = System.currentTimeMillis();
         int n = 5;
         int[] arr1 = {9,20,28,18,11};
         int[] arr2 = {30,1,21,17,28};
@@ -38,6 +39,10 @@ public class 비밀지도again {
         	answer[i] = a.substring(n*i, n*(i+1));
         }
         System.out.println(Arrays.toString(answer));
+        long afterTime = System.currentTimeMillis(); 
+        long secDiffTime = (afterTime - beforeTime)/1000;
+        System.out.println("시간차이(m) : "+secDiffTime);
+
 	}
 
 }
