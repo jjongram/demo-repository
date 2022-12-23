@@ -1,0 +1,126 @@
+.notice {
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: black;
+    font-size: 15px;
+}
+
+.title-group {
+    display: flex;
+}
+
+.title-group__title {
+    margin: 5px 20px;
+    font-weight: 600;
+}
+
+.title-group input {
+    width: 300px;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0.4);
+    border-width: 2.5px;
+}
+
+.title-group input::placeholder {
+    font-size: 20px;
+}
+
+.content-group {
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
+}
+
+.content-group__content {
+    font-weight: 600;
+    margin: 5px 20px;
+}
+
+.content-group input {
+    font-size: 20px;
+    width: 300px;
+    height: 10em;
+    border-radius: 3px;
+    border-color: rgba(0, 0, 0, 0.4);
+    border-width: 2.5px;
+}
+
+.content-group input::placeholder {
+    float: left;
+}
+
+.file-input {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px 25px;
+}
+
+.file-input__btn {
+    font-weight: 600;
+}
+
+.file-input input {
+    margin-left: 4px;
+}
+
+.submit-btn input {
+    margin-left: 22%;
+}
+
+.table-group {
+    padding-top: 2em;
+    margin-top: 2em;
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+    /* color: rgba(0, 0, 0, 0.4); */
+}
+
+.notice-table {
+    width: 100%;
+}
+
+.table-head {
+    background-color: rgb(254, 149, 114);
+    color: white;
+    height: 3em;
+}
+
+.table-body {
+    background-color: rgb(255, 253, 221);
+    
+}
+
+.table-foot {
+    background-color: rgb(254, 149, 114);
+    color: white;
+}
+
+.table-body a {
+    text-decoration: none;
+    color: black;
+}
+
+.a-tag {
+    background-color: rgb(236, 236, 236);
+    width: 5em;
+}
+
+.a-tag-box {
+    border-style:ridge;
+}
+
+.th-1 {
+    width: 2em;
+}
+
+.th-3 {
+    width: 8em;
+}
+
+.th-4 {
+    width: 7em;
+}
+
+.th-5 {
+    width: 3em;
+}

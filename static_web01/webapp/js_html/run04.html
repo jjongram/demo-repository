@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="/static/js/sample04.js"></script>
+</head>
+<body>
+    <form action="server.jsp" onsubmit="return validCheck();">
+        <div>
+            <input type="text" name="username" placeholder="아이디">
+        </div>
+        <div>
+            <input type="password" name="password" placeholder="패스워드">
+        </div>
+        <div>
+            <input type="password" name="passwordCheck" placeholder="패스워드 확인"><label for=""></label>
+        </div>
+        <div>
+            <select name="gender">
+                <option value="m">남자</option>
+                <option value="w">여자</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="chkHobby" value="게임"><label>게임</label>
+            <input type="checkbox" name="chkHobby" value="헬스"><label>헬스</label>
+            <input type="checkbox" name="chkHobby" value="등산"><label>등산</label>
+            <input type="checkbox" name="chkHobby" value="애니메이션"><label>애니메이션</label>
+            <input type="checkbox" name="chkHobby" value="유튜브"><label>유튜브</label>
+        </div>
+        <div>
+            <input type="radio" name="rdoHobby" value="게임"><label>게임</label>
+            <input type="radio" name="rdoHobby" value="헬스"><label>헬스</label>
+            <input type="radio" name="rdoHobby" value="등산"><label>등산</label>
+            <input type="radio" name="rdoHobby" value="애니메이션"><label>애니메이션</label>
+            <input type="radio" name="rdoHobby" value="유튜브"><label>유튜브</label>
+        </div>
+        <div>
+            <button type="submit">전송</button>
+        </div>
+    </form>
+</body>
+</html>

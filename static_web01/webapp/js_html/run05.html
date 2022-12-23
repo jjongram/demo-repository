@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="/static/js/sample05.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onclick="counting();">
+                <td>1</td>
+                <td>제목 입니다.</td>
+                <td>tester</td>
+                <td>2022-12-23</td>
+                <td>3</td>
+            </tr>
+            <tr onclick="counting();">
+                <td>2</td>
+                <td>공지사항 입니다.</td>
+                <td>admin</td>
+                <td>2022-12-23</td>
+                <td>5</td>
+            </tr>
+            <tr onclick="counting(this);">
+                <td>3</td>
+                <td>게시판 테스트 중 입니다.</td>
+                <td>user1</td>
+                <td>2022-12-23</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
