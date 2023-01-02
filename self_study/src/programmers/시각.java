@@ -18,6 +18,7 @@ public class 시각 {
 			m = s/60;
 			h = m/60;
 			System.out.println(time);
+			if(time)
 		}
 	}
 
