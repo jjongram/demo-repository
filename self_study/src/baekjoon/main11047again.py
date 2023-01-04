@@ -1,6 +1,4 @@
-# n = int(input())
-# k = int(input())
-n, k = map(int, input().split(" "))
+n, k = map(int, input().split())
 a = []
 cnt = 0
 max = 0
